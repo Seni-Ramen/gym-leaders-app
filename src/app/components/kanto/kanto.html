@@ -1,0 +1,31 @@
+<div class="region-page kanto-page">
+  <header class="region-hero">
+    <div class="hero-copy">
+      <p class="region-kicker">Region Overview</p>
+      <h1>Kanto</h1>
+      <p class="region-description">
+        The original Pokémon League is where champions are forged. Kanto is packed with iconic gyms,
+        rival battles, and the legendary path toward the Indigo Plateau.
+      </p>
+    </div>
+
+    <div class="hero-stats">
+      <span>8 badges</span>
+      <span>Indigo Plateau</span>
+      <span>Classic League</span>
+    </div>
+  </header>
+
+  @if (selectedMonologue) {
+    <div class="announcement-bar">Active Monologue: {{ selectedMonologue }}</div>
+  }
+
+  <div class="grid region-grid">
+    @for (leader of kantoLeaders; track leader.name) {
+      <app-leader-info
+        [leader]="leader"
+        (selectMonologue)="handleMonologue($event)">
+      </app-leader-info>
+    }
+  </div>
+</div>

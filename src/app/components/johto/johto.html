@@ -1,0 +1,31 @@
+<div class="region-page johto-page">
+  <header class="region-hero">
+    <div class="hero-copy">
+      <p class="region-kicker">Region Overview</p>
+      <h1>Johto</h1>
+      <p class="region-description">
+        Johto brings a deeper sense of legacy and strategy, where mystical traditions and fierce battles
+        shape every gym challenge. It is a region of grit, confidence, and unforgettable rivalries.
+      </p>
+    </div>
+
+    <div class="hero-stats">
+      <span>8 badges</span>
+      <span>Silver Conference</span>
+      <span>Ancient rivals</span>
+    </div>
+  </header>
+
+  @if (selectedMonologue) {
+    <div class="announcement-bar">Active Monologue: {{ selectedMonologue }}</div>
+  }
+
+  <div class="grid region-grid">
+    @for (leader of johtoLeaders; track leader.name) {
+      <app-leader-info
+        [leader]="leader"
+        (selectMonologue)="handleMonologue($event)">
+      </app-leader-info>
+    }
+  </div>
+</div>

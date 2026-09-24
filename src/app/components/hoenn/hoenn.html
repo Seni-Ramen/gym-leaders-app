@@ -1,0 +1,20 @@
+<div class="region-page hoenn-page">
+    <header class="region-hero">
+        <div class="hero-copy">
+            <p class="region-kicker">Region Overview</p>
+            <h1>Hoenn</h1>
+        </div>
+    </header>
+
+    <div class="grid region-grid">
+        @for (trainer of trainerService.trainers(); track trainer.name) {
+            <div class="trainer-card">
+                <h3 style="color: black">{{ trainer.name }}</h3>
+                <p><strong>Badge:</strong> {{ trainer.badge }}</p>
+                <p><strong>Pokemon Team:</strong> {{ trainer.pokemonTeam }} </p>
+                <p><strong>Town:</strong> {{ trainer.town }} </p>
+                <p><strong>Specialty:</strong> {{ trainer.specialty }} </p>
+            </div>
+        }
+    </div>
+</div>

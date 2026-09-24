@@ -1,0 +1,22 @@
+<div class="card" [style.borderColor]="leader.themeColor">
+  <div class="leader-team-strip" [style.borderColor]="leader.themeColor">
+    @for (sprite of leader.teamImages; track sprite) {
+      <img [src]="sprite" [alt]="leader.name + ' Pokémon team member'" />
+    }
+  </div>
+
+  <h3 [style.color]="leader.themeColor">{{ leader.name }}</h3>
+  <p><strong>Age:</strong> {{ leader.age }}</p>
+  <p><strong>Location:</strong> {{ leader.location }}</p>
+  <p><strong>Specialty:</strong> {{ leader.specialty }} </p>
+  <p><strong>Team:</strong> {{ leader.pokemonTeam }}</p>
+  <p><strong>Badge:</strong> {{ leader.badge }}</p>
+
+  <button [style.backgroundColor]="leader.themeColor" (click)="toggleMonologue()">
+    Monologue/Description/Motto
+  </button>
+
+  @if (showMonologue) {
+    <p class="monologue-box">{{ leader.motto }}</p>
+  }
+</div>
