@@ -15,6 +15,7 @@ export class Kanto {
 
   kantoLeaders: GymLeader[] = [
     { name: 'Brock',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/brock.png',
       age: 15,
       badge: 'Boulder Badge',
       location: 'Pewter City',
@@ -28,6 +29,7 @@ export class Kanto {
       motto: 'My rock-hard willpower will crush your offense! 🪨💪'
     },
     { name: 'Misty',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/misty.png',
       age: 12,
       badge: 'Cascade Badge',
       location: 'Cerulean City',
@@ -41,6 +43,7 @@ export class Kanto {
       motto: 'My policy is an all-out offensive with Water-Type Pokemon! 💦🌊'
     },
     { name: 'Lt. Surge',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/ltsurge.png',
       age: 30,
       badge: 'Thunder Badge',
       location: 'Vermilion City',
@@ -55,6 +58,7 @@ export class Kanto {
       motto: 'I tell you, kid, electric Pokemon saved me during the war! ⚡🪖'
     },
     { name: 'Erika',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/erika.png',
       age: 12,
       badge: 'Rainbow Badge',
       location: 'Celadon City',
@@ -69,6 +73,7 @@ export class Kanto {
       motto: 'I am a student of flower arranging, my Pokemon are the Grass Type. 🌸🌿'
     },
     { name: 'Koga',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/koga.png',
       age: 38,
       badge: 'Soul Badge',
       location: 'Fuchsia City',
@@ -83,6 +88,7 @@ export class Kanto {
       motto: 'Despair to the creeping horror of Poison-type techniques! ☠️🧪'
     },
     { name: 'Sabrina',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/sabrina.png',
       age: 21,
       badge: 'Marsh Badge',
       location: 'Saffron City',
@@ -98,6 +104,7 @@ export class Kanto {
       motto: 'I had a vision of your arrival, psychic power transcends all! 🔮✨'
     },
     { name: 'Blaine',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/blaine.png',
       age: 58,
       badge: 'Volcano Badge',
       location: 'Cinnabar Island',
@@ -113,6 +120,7 @@ export class Kanto {
       motto: 'Hah! Better to have Burn Heal ready before challenging my fire! 🔥🌋'
     },
     { name: 'Giovanni',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/giovanni.png',
       age: 42,
       badge: 'Earth Badge',
       location: 'Viridian City',

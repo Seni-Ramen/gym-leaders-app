@@ -15,6 +15,7 @@ export class Johto {
 
   johtoLeaders: GymLeader[] = [
     { name: 'Falkner',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/falkner.png',
       age: 18,
       badge: 'Zephyr Badge',
       location: 'Violet City',
@@ -29,6 +30,7 @@ export class Johto {
       motto: 'I show you the true power of the magnificent bird Pokemon! 🦅'
     },
     { name: 'Bugsy',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/bugsy.png',
       age: 12,
       badge: 'Hive Badge',
       location: 'Azalea Town',
@@ -43,6 +45,7 @@ export class Johto {
       motto: 'I never lose when it comes to Bug-type Pokemon 🐞'
     },
     { name: 'Whitney',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/whitney.png',
       age: 16,
       badge: 'Plain Badge',
       location: 'Goldenrod City',
@@ -56,6 +59,7 @@ export class Johto {
       motto: 'Everyone was into Pokemon, so I got into it too! They are super cute 💕'
     },
     { name: 'Morty',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/morty.png',
       age: 25,
       badge: 'Fog Badge',
       location: 'Ecruteak City',
@@ -70,6 +74,7 @@ export class Johto {
       motto: 'I have had training alongside ghost Pokemon all my life! 👻🔮',
     },
     { name: 'Chuck',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/chuck.png',
       age: 36,
       badge: 'Storm Badge',
       location: 'Cianwood City',
@@ -83,6 +88,7 @@ export class Johto {
       motto: 'We pound our bodies with fierce waterfalls every day to grow tough 💪🌊'
     },
     { name: 'Jasmine',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/jasmine.png',
       age: 17,
       badge: 'Mineral Badge',
       location: 'Olivine City',
@@ -96,6 +102,7 @@ export class Johto {
       motto: 'Steel-type Pokemon are brand new, clad in cold steel armor! 🛡️⚙️',
     },
     { name: 'Pryce',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/pryce.png',
       age: 65,
       badge: 'Glacier Badge',
       location: 'Mahogany Town',
@@ -110,6 +117,7 @@ export class Johto {
       motto: 'To endure bitter winter winds, one must train alongside solid ice! ❄️⛄'
     },
     { name: 'Clair',
+      trainerImage: 'https://play.pokemonshowdown.com/sprites/trainers/clair.png',
       age: 22,
       badge: 'Rising Badge',
       location: 'Blackthorn City',

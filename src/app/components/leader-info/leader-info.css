@@ -13,6 +13,28 @@
   box-shadow: 0 18px 32px rgba(15, 23, 42, 0.12);
 }
 
+.leader-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 76px;
+  margin-bottom: 0.6rem;
+}
+
+.trainer-icon {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  animation: trainer-idle 1.8s ease-in-out infinite;
+}
+
+@keyframes trainer-idle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
 .leader-team-strip {
   display: flex;
   align-items: center;
@@ -38,7 +60,7 @@
 }
 
 .card h3 {
-  margin: 0 0 0.85rem;
+  margin: 0;
   font-size: 1.7rem;
 }
 

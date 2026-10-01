@@ -1,11 +1,17 @@
 <div class="card" [style.borderColor]="leader.themeColor">
+  <div class="leader-heading">
+    @if (leader.trainerImage) {
+      <img class="trainer-icon" [src]="leader.trainerImage" [alt]="leader.name + ' trainer portrait'" />
+    }
+    <h3 [style.color]="leader.themeColor">{{ leader.name }}</h3>
+  </div>
+
   <div class="leader-team-strip" [style.borderColor]="leader.themeColor">
     @for (sprite of leader.teamImages; track sprite) {
       <img [src]="sprite" [alt]="leader.name + ' Pokémon team member'" />
     }
   </div>
 
-  <h3 [style.color]="leader.themeColor">{{ leader.name }}</h3>
   <p><strong>Age:</strong> {{ leader.age }}</p>
   <p><strong>Location:</strong> {{ leader.location }}</p>
   <p><strong>Specialty:</strong> {{ leader.specialty }} </p>
